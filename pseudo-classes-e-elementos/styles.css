@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 200vh;
+    width: 200vw;
+}
+
+.minhadiv {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
