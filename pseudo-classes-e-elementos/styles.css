@@ -22,6 +22,7 @@ body {
 
 .meu_input { /* hover = passar o mouse em cima */
     border: 1px solid black;
+    display: block;
 }
 
 .meu_input:disabled { /* disabled = quando o elemento estiver desabilitado */
