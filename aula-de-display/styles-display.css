@@ -1,0 +1,51 @@
+.div_1, .div_2, .div_3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.div_1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    display: inline;  /* inline não deixa possível atribuir altura e largura específicos*/
+    margin-right: 10px;
+}
+
+.div_2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;  /* inline-block deixa possível atribuir altura e largura específicos*/  
+}
+
+.div_3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: block;  /* block causa uma quebra de linha*/  
+}
+
+/* existe também o display: none, que faz desaparecer o conteúdo */
+
+.divisoria {
+    margin: 20px;
+}
+
+.bloco_preto {
+    width: 1000px;
+    height: 400px;
+    background-color: black;
+    display: flex;  /* flex é sempre no bloco PAI e reflete nos elementos filhos*/
+    /*flex-direction: row; row = em linha, valor inicial.   row-reverse = invertido na tela 
+                                   column = em coluna,              column-reverse = invertido na tela  */
+    justify-content: space-evenly; /* conteúdo no inicio, fim ou centro (start, end, center), space-between, space-around, space-evenly */
+    align-items: center; /* altera os elementos na vertical*/
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 3px solid red;
+}

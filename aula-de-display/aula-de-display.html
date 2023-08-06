@@ -2,11 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="../styles-header.css">
-    <link rel="stylesheet" href="../reset.css">
-    <title>Tags de Mídia</title>
+    <link rel="stylesheet" href="./styles-display.css"">
+    <link rel="stylesheet" href="../reset.css"">    
+    <title>Box models</title>
 </head>
+
 <body>
     <header class="all">
         <nav>
@@ -29,25 +31,38 @@
             </ul>
         </nav>
     </header>
+    
+    <div class="div_1">
+        | div1 |
+    </div>
+    <div class="div_1">
+        | div1 |
+    </div>
 
-    <img src="./Avengers-picture.jpg" style="display: block; width: 30%;">
+    <div class="div_2">
+        | div2 |
+    </div>
+    <div class="div_2">
+        | div2 |
+    </div>
 
-    <video controls id="player" style="width: 50%; border-radius: 10px;">
-    <source src="./Avengers-Endgame-trailer.mp4" type="video/mp4">
-    Seu navegador não possui suporte prar Vídeos.
-    </video>
+    <div class="div_3">
+        | div3 |
+    </div>
+    <div class="div_3">
+        | div3 |
+    </div>
+    
+    <p class="divisoria">display flex abaixo</p>
+    
+    <div class="bloco_preto">
+        <div class="caixa">1</div>
+        <div class="caixa">2</div>
+        <div class="caixa">3</div>
+        <div class="caixa">4</div>
+    </div>
 
-    <audio controls style="display: block;">
-        <source src="./avengers-track.mp3" type="audio/mpeg">
-        Seu navegador não possui suporte para áudio.
-    </audio>
-    <button onclick="document.getElementById('player').play()">Play</button>
-    <button onclick="document.getElementById('player').pause()">Pause</button>
-
-    <iframe src="./teste-iframe.html" frameborder="0" style="display: block;">
-
-    </iframe>
-
+    <p class="divisoria">display flex abaixo</p>
 
 </body>
 </html>
