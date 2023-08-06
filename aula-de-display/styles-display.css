@@ -60,7 +60,7 @@
     width: 1000px;
     height: 400px;
     background-color: #000;
-    display: grid;      /*sempre no elementp PAI*/
+    display: grid;      /*sempre no elemento PAI*/
     grid-template-columns: 1fr 1fr 1fr;  /* repeat(3, 1fr)*/ 
     grid-template-rows: repeat(2, 1fr);
     column-gap: 10px;
