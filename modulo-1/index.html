@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-header.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Aula de Formulários</title>
+</head>
+<body>
+    <header class="all">
+        <nav>
+            <ul class="lista-header">
+                <a class="links-header" href="./index.html">
+                    <li>Home (Aula de Formulários)</li>
+                </a>
+                <a class="links-header" href="./tags-de-midia/tags-midia.html">
+                    <li>Aula de Tags de Mídia</li>
+                </a>
+                <a class="links-header" href="./style-script-ancora/style-script-ancora.html">
+                    <li>Aula de Tags Estruturais</li>
+                </a>
+                <a class="links-header" href="./box-models/box-model.html">
+                    <li>Aula de Box Models</li>
+                </a>
+                <a class="links-header" href="./pseudo-classes-e-elementos/pseudo-classes-e-elementos.html">
+                    <li>Aula de Pseudo Classes e Pseudo Elementos</li>
+                </a>
+                <a class="links-header" href="./aula-de-display/aula-de-display.html">
+                    <li>Aula de Display e Keyframes</li>
+                </a>
+                <a class="links-header" href="./media-query/media-query.html">
+                    <li>Aula de Media-Query</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="./index.html">
+
+        <label for="email">Email</label>
+        <input style="display: block" id="email" type="email" name="email" placeholder="Coloque um email válido">
+
+        <label for="password">Senha</label>
+        <input style="display: block" id="password" type="password" name="password">
+
+        <label for="text">Texto</label>
+        <input style="display: block" id="text" type="text" name="text">
+
+        <label for="Checkbox">Checkbox</label>
+        <input style="display: block" id="Checkbox" type="checkbox" name="checkbox">
+
+        <label for="radio">Masculino</label>
+        <input style="display: block" id="radio" type="radio" name="sexo" value="Masculino">
+        
+        <label for="radio">Feminino</label>
+        <input style="display: block" id="radio" type="radio" name="sexo" value="Feminino">
+
+        <label for="radio">Outro</label>
+        <input style="display: block" id="radio" type="radio" name="sexo" value="Outro">
+
+        <label for="range">Range</label>
+        <input style="display: block" id="range" type="range" name="range">
+
+        <label for="number">Número</label>
+        <input style="display: block" id="number" type="number" name="number">
+        
+        <label for="file">Arquivo</label>
+        <input style="display: block" id="file" type="file" name="file">
+
+        <label for="date">Data</label>
+        <input style="display: block" id="date" type="date" name="date">
+
+        <select style="display: block" name="dia da semana">
+        <option value="Domingo">Domingo</option>
+        <option value="Segunda">Segunda</option>
+        <option value="Terça">Terça</option>
+        <option value="Quarta">Quarta</option>
+        <option value="Quinta">Quinta</option>
+        <option value="Sexta">Sexta</option>
+        <option value="Sábado">Sábado</option>
+        </select>
+
+        <textarea style="display: block;" name="mensagem" id="mensagem" rows="10">
+        
+        </textarea>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

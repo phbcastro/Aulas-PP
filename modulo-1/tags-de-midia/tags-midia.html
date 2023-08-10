@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles-header.css">
+    <link rel="stylesheet" href="../reset.css">
+    <title>Tags de Mídia</title>
+</head>
+<body>
+    <header class="all">
+        <nav>
+            <ul class="lista-header">
+                <a class="links-header" href="../index.html">
+                    <li>Home (Aula de Formulários)</li>
+                </a>
+                <a class="links-header" href="../tags-de-midia/tags-midia.html">
+                    <li>Aula de Tags de Mídia</li>
+                </a>
+                <a class="links-header" href="../style-script-ancora/style-script-ancora.html">
+                    <li>Aula de Tags Estruturais</li>
+                </a>
+                <a class="links-header" href="../box-models/box-model.html">
+                    <li>Aula de Box Models</li>
+                </a>
+                <a class="links-header" href="../pseudo-classes-e-elementos/pseudo-classes-e-elementos.html">
+                    <li>Aula de Pseudo Classes e Pseudo Elementos</li>
+                </a>
+                <a class="links-header" href="../aula-de-display/aula-de-display.html">
+                    <li>Aula de Display e Keyframes</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="./Avengers-picture.jpg" style="display: block; width: 30%;">
+
+    <video controls id="player" style="width: 50%; border-radius: 10px;">
+    <source src="./Avengers-Endgame-trailer.mp4" type="video/mp4">
+    Seu navegador não possui suporte prar Vídeos.
+    </video>
+
+    <audio controls style="display: block;">
+        <source src="./avengers-track.mp3" type="audio/mpeg">
+        Seu navegador não possui suporte para áudio.
+    </audio>
+    <button onclick="document.getElementById('player').play()">Play</button>
+    <button onclick="document.getElementById('player').pause()">Pause</button>
+
+    <iframe src="./teste-iframe.html" frameborder="0" style="display: block;">
+
+    </iframe>
+
+
+</body>
+</html>
