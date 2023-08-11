@@ -1,0 +1,52 @@
+.div-contato {
+    width: 100%;
+    height: 400px;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+form, label, button {
+    background-color: transparent;
+}
+
+.form-contato {
+    width: 50%;
+    background-color: #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #8b8b8b;
+    border-radius: 15px;
+}
+
+.label-contato {
+    font-size: 25px;
+    padding: 10px;
+    align-self: center;
+}
+
+.input-contato {
+    width: 50%;
+    height: 30px;
+    background-color: white;
+    align-self: center;
+}
+
+.button-contato {
+    width: 30%;
+    height: 30px;
+    margin: 40px;
+    border-radius: 5px;
+    align-self: center;
+    background-color: #b9b9b9;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+.button-contato:hover {
+    background-color: black;
+    color: white;
+}
