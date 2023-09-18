@@ -1,57 +1,46 @@
 const numero = 10;
-const string = '20.9';
+const string = '20';
 const numeroQuebrado = 10.8;
 
 
 
-
 //retornamos um number a partir de uma string
-Number.parseFloat(string); //20.9
+Number.parseFloat(string);
 
 // retornamos um número a partir de uma string, podendo definir a casa decimal
-Number.parseInt(string, 10); // 20
+Number.parseInt();
 
-// // retornamos um número com base nas casas decimais
-numeroQuebrado.toFixed(); // 11
+// retornamos um número com base nas casas decimais
+numeroQuebrado.toFixed();
 
-// // retorna uma string a partir de um numero
-numero.toString(); '10'
-
-
-// // Math --> Objeto nativo do JAVASCRIPT que possui métodos e propriedades de expressões matemáticas
-
-// // retorna o valor absoluto
-Math.abs(-5); // 5
-
-// // arredonda o valor para cima
-Math.ceil(numeroQuebrado); // 11
-
-// // arredonda o valor para baixo
-Math.floor(numeroQuebrado); // 10
-
-// // arredonda para o numero mais proximo
-Math.round(numeroQuebrado); // 11
-
-// // retorna um numero aleatorio entre 0 e 1
-console.log((Math.random() * 500).toFixed()); //valor aleatorio entre 0 e 500
-
-// // retorna o maior numero entre os listados
-Math.max(2, 5, 3, 45, 211, 52); // 211
-
-// // retorna o menor numero entre os listados
-Math.min(2, 5, 3, 45, 211, 52); // 2
+// retorna uma string a partir de um numero
+numero.toString();
 
 
-const hoje = new Date();
+// Math -> Objetivo nativo do javascript que possui métodos e propriedades de expressões matemáticas 
 
-hoje.getDate(); // que dia é hoje
+// retorna o valor absoluto 
+Math.abs();
 
-hoje.getMonth();
+//arredonda o valor para cima
+Math.ceil();
 
-hoje.getFullYear();
+// arredonda o valor para baixo 
+Math.floor();
 
-console.log(`${hoje.getHours()}:${hoje.getMinutes()}:${hoje.getSeconds()}`); //juntando para conseguir a hora completa
+//arredonda para o numero mais próximo
+Math.round();
 
-hoje.getMinutes();
+//retorna um numero aleatorio entre 0 e 1
+Math.random();
 
-hoje.getDay(); //dia da semana em inglês
+//retorna o maior numero dentre os listados
+Math.max();
+
+//retorna o menor numero dentre os listados
+Math.min();
+
+
+
+
+
