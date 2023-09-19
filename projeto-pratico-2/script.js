@@ -52,34 +52,33 @@ async function loadCharacters (url) {
                 `url('https://starwars-visualguide.com/assets/img/characters/${character.url.replace(/\D/g, "")}.jpg')`;
                 characterImage.className = "character-image";
                 //name
-                const name = document.createElement("span");
-                name.className = "character-details";
-                name.innerText = `Nome: ${character.name}`;
+                const characterName = document.createElement("span");
+                characterName.className = "character-details";
+                characterName.innerText = `Nome: ${character.name}`;
                 //height
                 const characterHeight = document.createElement("span");
                 characterHeight.className = "character-details";
-                characterHeight.innerText = `Altura: ${character.height}`;
+                characterHeight.innerText = `Altura: ${convertHeight(character.height)}`;
                 //mass
                 const characterMass = document.createElement("span");
                 characterMass.className = "character-details";
-                characterMass.innerText = `Peso: ${character.mass}`;
+                characterMass.innerText = `Peso: ${convertMass(character.mass)}`;
                 //eye-color
                 const characterEyeColor = document.createElement("span");
                 characterEyeColor.className = "character-details";
-                characterEyeColor.innerText = `Cor dos Olhos: ${character.eye_color}`;
+                characterEyeColor.innerText = `Cor dos Olhos: ${convertEyeColor(character.eye_color)}`;
                 //birth-year
-                const birthYear = document.createElement("span");
-                birthYear.className = "character-details";
-                birthYear.innerText = `Nascimento: ${character.birth_year}`;
-                /*
+                const characterBirthYear = document.createElement("span");
+                characterBirthYear.className = "character-details";
+                characterBirthYear.innerText = `Nascimento: ${convertBirthYear(character.birth_year)}`;
                 
-                
-                
-                PAREI NO MINUTO 13:10 DO VÍDEO AULA 10 BONUS
-                
-                
-                
-                */
+                modalContent.appendChild(characterImage);
+                modalContent.appendChild(characterName);
+                modalContent.appendChild(characterHeight);
+                modalContent.appendChild(characterMass);
+                modalContent.appendChild(characterEyeColor);
+                modalContent.appendChild(characterBirthYear);
+
             }
 
             mainContent.appendChild(card);
@@ -135,4 +134,45 @@ async function loadPreviousPage () {
 function hideModal () {
     const modal = document.getElementById("modal");
     modal.style.visibility = "hidden"
+}
+
+function convertEyeColor(eyeColor) {
+    const cores = {
+        blue: "azul",
+        brown: "castanho",
+        green: "verde",
+        yellow: "amarelo",
+        black: "preto",
+        pink: "rosa",
+        red: "vermelho",
+        orange: "laranja",
+        hazel: "avela",
+        unknown: "desconhecida"
+    };
+
+    return cores[eyeColor.toLowerCase()] || eyeColor;
+}
+
+function convertHeight(height) {
+    if (height === "unknown") {
+        return "desconhecida";
+    }
+
+    return (height/100).toFixed(2);
+}
+
+function convertMass(mass) {
+    if (mass === "unknown") {
+        return "desconhecido";
+    }
+
+    return `${mass} kg`
+}
+
+function convertBirthYear(birthYear) {
+    if (birthYear === "unknown") {
+        return "desconhecido";
+    }
+
+    return birthYear
 }
